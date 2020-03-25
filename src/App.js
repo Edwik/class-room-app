@@ -5,9 +5,9 @@ import './App.css';
 function App() {
 
   useEffect( ()=>{
-    $("#doc").attr("src",!process.env.DOC ? 'https://docs.google.com/presentation/d/1nIUvPah0WQEEVwmTGQ1xrUDt4y2ZtYmC/edit' : process.env.DOC);
+    $("#doc").attr("src",!process.env.DOC ? 'https://docs.google.com/document/d/1eDRx91Pcub4GODmj403Jm7n03dlSRnWdwpUo8O-sDdk/edit' : process.env.DOC);
     $("#youtube").attr("src",!process.env.YOUTUBE ? 'https://www.youtube.com/embed/X2YoHFuWkqs?rel=0&amp;autoplay=1' : process.env.YOUTUBE+'?rel=0&amp;autoplay=1');
-    $("#chat").attr("src",!process.env.CHAT ? 'https://docs.google.com/presentation/d/1nIUvPah0WQEEVwmTGQ1xrUDt4y2ZtYmC/edit' : process.env.CHAT);
+    $("#chat").attr("src",!process.env.CHAT ? 'https://www.youtube.com/live_chat?v=4ysArLvNHMg&embed_domain=class-room-app.herokuapp.com' : process.env.CHAT);
   },[])
 
   return (
